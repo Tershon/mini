@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    background-image: url('background-animation.gif'); /* Анимация фона */
+    background-size: cover;
+}
+
+.action-btn {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #005fbc;
+}
+
+.hidden {
+    display: none;
+}
+
+.language-select {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}

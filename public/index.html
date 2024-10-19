@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="left">
+      <button class="profile-btn" id="profileBtn">Профиль</button>
+    </div>
+  </div>
+
+  <h1 id="welcomeMessage">Добро пожаловать в систему обучения!</h1>
+  <button id="startBtn" class="action-btn">Начать обучение</button>
+  <button id="orderBtn" class="action-btn">Заказать обучение</button>
+  <button id="quizBtn" class="quiz-btn">Ответить на вопросы</button>
+
+  <div id="orderModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" id="closeOrderModal">&times;</span>
+      <h2 id="orderTitle">Заказ курса</h2>
+      <form id="orderForm">
+        <label for="name" id="nameLabel">Введите ваше имя:</label>
+        <input type="text" id="name" placeholder="Ваше имя">
+        
+        <label for="phone" id="phoneLabel">Введите ваш номер телефона:</label>
+        <input type="text" id="phone" placeholder="Ваш номер телефона">
+        
+        <label for="email" id="emailLabel">Ваш Gmail:</label>
+        <input type="email" id="email" placeholder="Ваш Gmail">
+        
+        <label for="language" id="languageLabel">Язык программирования:</label>
+        <select id="language">
+          <option value="python">Python</option>
+          <option value="javascript">JavaScript</option>
+          <option value="java">Java</option>
+        </select>
+        
+        <label for="promo" id="promoLabel">Промокод (если есть):</label>
+        <input type="text" id="promo" placeholder="Ваш промокод">
+        
+        <button type="submit" class="submit-btn">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="languageModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" id="closeLanguageModal">&times;</span>
+      <h2>Выбор языка</h2>
+      <select id="languageSelect">
+        <option value="ru">Русский</option>
+        <option value="kk">Қазақша</option>
+        <option value="en">English</option>
+      </select>
+      <button id="saveLanguage" class="submit-btn">Сохранить</button>
+    </div>
+  </div>
+
+  <div id="profile" class="hidden">
+    <h2>Профиль</h2>
+    <p>Счет монеток: <span id="coinCount">0</span></p>
+    <button id="closeProfile" class="close-btn">Закрыть</button>
+  </div>
+
+  <div id="courses"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

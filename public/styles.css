@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(to bottom, #8FBC8F, #2E8B57); /* Полузеленый фон */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+}
+
+.profile-btn {
+    background-color: #007bff; /* Мягкий цвет для кнопки профиля */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action-btn {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quiz-btn {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #ffc107; /* Яркий цвет для кнопки с вопросами */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    color: #333; /* Темный цвет текста в модальном окне */
+}
+
+.hidden {
+    display: none;
+}
+
+.close-btn {
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
